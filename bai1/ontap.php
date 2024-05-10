@@ -58,5 +58,53 @@ $mangInfo = ["ten"=>"HQT","nam_sinh"=>1998];
 // hiển thị dòng thông tin sau lên web
 // tên tôi là HQT tôi 23 tuổi
 // số tuổi = năm hiện tại - năm sinh trong mảng info
-echo "Tên tôi là ".$mangInfo["ten"]."Tôi ".date("Y") - $mangInfo["nam_sinh"]." Tuổi";
+//echo "Tên tôi là ".$mangInfo["ten"]."Tôi ".date("Y") - $mangInfo["nam_sinh"]." Tuổi";
+//duyệt mảng sử dụng foreach
+//foreach ($mangLh as $k=>$v) {
+//    echo "Vị trí ".$k."=> Giá trị ".$v."<br>";
+//}
+$mangColor = ["red"=>"Màu đỏ","blue"=>"Xanh dương","pink"=>"Màu hồng"];
+// đổ các phần tử của mangColor ra bảng tương ứng
+// cột bên trái là tên màu bằng TA
+// côtj bên phải là tên màu bằng tiếng việt
+// mỗi 1 dòng sẽ hiển thị màu tương ứng với dòng đó
+// mảng liên hợp 2 chiều
+$mangStudent = [
+  ["ten"=>"Thắng","tuoi"=>18],
+  ["ten"=>"duy","tuoi"=>29],
+  ["ten"=>"quang","tuoi"=>35]
+];
+for ($i = 0 ;$i < count($mangStudent);$i++) {
+    echo $mangStudent[$i]["ten"]."-".$mangStudent[$i]["tuoi"]."<br>";
+//    echo ;
+}
+// đổ tên tuổi ra bảng
+
+//echo $mangStudent[1]["ten"]."<br>";
+//echo $mangStudent[2]["ten"]
+// những người nào có tuổi > 20 tô màu vàng  ở dòng của bảng
 ?>
+<table border="1">
+    <tr>
+        <td>Tên</td>
+        <td>Tuổi</td>
+    </tr>
+    <?php for ($i = 0 ;$i < count($mangStudent); $i ++) {?>
+    <tr>
+        <td><?php echo $mangStudent[$i]["ten"]; ?></td>
+        <td><?php echo $mangStudent[$i]["tuoi"]; ?></td>
+    </tr>
+    <?php } ?>
+</table>
+<table border="1">
+    <tr>
+        <td>Key</td>
+        <td>Value</td>
+    </tr>
+    <?php foreach ($mangColor as $key => $value) { ?>
+    <tr bgcolor="<?php echo $key; ?>">
+        <td><?php echo $key; ?></td>
+        <td><?php echo $value; ?></td>
+    </tr>
+    <?php } ?>
+</table>

@@ -18,9 +18,13 @@
       <file leaf-file-name="ontap.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bai1/ontap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="221">
+              <caret line="98" column="18" lean-forward="true" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
+              <folding>
+                <marker date="1715306843423" expanded="true" signature="2978:3244" ph="..." />
+                <marker date="1715306843423" expanded="true" signature="2987:3041" ph="..." />
+                <marker date="1715306843423" expanded="true" signature="3134:3220" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,8 +46,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="19" />
-    <option name="y" value="25" />
+    <option name="x" value="18" />
+    <option name="y" value="27" />
     <option name="width" value="1400" />
     <option name="height" value="782" />
   </component>
@@ -180,15 +184,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714958385328</updated>
-      <workItem from="1714958387434" duration="7279000" />
+      <workItem from="1714958387434" duration="12129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7279000" />
+    <option name="totallyTimeSpent" value="12129000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="19" y="25" width="1400" height="782" extended-state="0" />
+    <frame x="18" y="27" width="1400" height="782" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -223,9 +227,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bai1/ontap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="221">
+          <caret line="98" column="18" lean-forward="true" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
+          <folding>
+            <marker date="1715306843423" expanded="true" signature="2978:3244" ph="..." />
+            <marker date="1715306843423" expanded="true" signature="2987:3041" ph="..." />
+            <marker date="1715306843423" expanded="true" signature="3134:3220" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

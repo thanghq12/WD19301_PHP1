@@ -74,25 +74,34 @@ $mangStudent = [
   ["ten"=>"duy","tuoi"=>29],
   ["ten"=>"quang","tuoi"=>35]
 ];
-for ($i = 0 ;$i < count($mangStudent);$i++) {
-    echo $mangStudent[$i]["ten"]."-".$mangStudent[$i]["tuoi"]."<br>";
-//    echo ;
-}
+// Duyệt mảng student sử dụng for thường
+//for ($i = 0 ;$i < count($mangStudent);$i++) {
+//    echo $mangStudent[$i]["ten"]."-".$mangStudent[$i]["tuoi"]."<br>";
+////    echo ;
+//}
+// duyệt mảng student sử dụng foreach
+//foreach ()
 // đổ tên tuổi ra bảng
 
 //echo $mangStudent[1]["ten"]."<br>";
 //echo $mangStudent[2]["ten"]
 // những người nào có tuổi > 20 tô màu vàng  ở dòng của bảng
+$arrTeacher = [
+        ["name"=>"Nguyễn Văn A","year"=>1996,"salary"=>160,"hour"=>8],
+        ["name"=>"Nguyễn Văn B","year"=>1998,"salary"=>158,"hour"=>10],
+        ["name"=>"Nguyễn Văn C","year"=>1995,"salary"=>160,"hour"=>4],
+]
+// hiển thị thông tin của teacher ra bảng gồm thông tin sau :
 ?>
 <table border="1">
     <tr>
         <td>Tên</td>
         <td>Tuổi</td>
     </tr>
-    <?php for ($i = 0 ;$i < count($mangStudent); $i ++) {?>
+    <?php foreach ($mangStudent as $key => $value) {?>
     <tr>
-        <td><?php echo $mangStudent[$i]["ten"]; ?></td>
-        <td><?php echo $mangStudent[$i]["tuoi"]; ?></td>
+        <td><?php echo $value["ten"]; ?></td>
+        <td><?php echo $value["tuoi"]; ?></td>
     </tr>
     <?php } ?>
 </table>

@@ -1,5 +1,10 @@
 <?php
+include_once "env.php"; // include đầu tiên
+include_once "models/db.php"; // include thứ 2
+include_once "models/Product.php"; //
+//model bao giừo cũng phải include trước controller
 include_once "controllers/ProductController.php";
+
 $url = isset($_GET["url"]) ? $_GET["url"] : "/";
 $product = new ProductController();
 switch ($url) {

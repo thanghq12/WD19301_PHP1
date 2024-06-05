@@ -6,4 +6,9 @@ const DBPASS = "";
 const DBCHARSET = "utf8";
 const DBHOST = "127.0.0.1";
 const BASE_URL = "http://localhost/WEB2014_WD19301/bai2_mvc/";
+
+function redirect($yourURL) {
+    echo ("<script>location.href='$yourURL'</script>");
+}
+
 ?>

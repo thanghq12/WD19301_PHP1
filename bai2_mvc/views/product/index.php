@@ -13,12 +13,16 @@
             <td>id</td>
             <td>Name</td>
             <td>Price</td>
+            <td>Action</td>
         </tr>
         <?php foreach ($products as $key=>$value) { ?>
         <tr>
             <td><?php echo $value['id']; ?></td>
             <td><?php echo $value['name']; ?></td>
             <td><?php echo $value['price']; ?></td>
+            <td><a href="<?php echo BASE_URL.'?url=edit-product&id='.$value['id']; ?>">Edit</a>
+                <a href="<?php echo BASE_URL.'?url=delete-product&id='.$value['id']; ?>">Delete</a>
+            </td>
         </tr>
         <?php } ?>
     </table>

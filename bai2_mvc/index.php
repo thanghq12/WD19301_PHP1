@@ -17,6 +17,9 @@ switch ($url) {
     case "edit-product":
         $product->edit();
     break;
+    case "delete-product":
+        $product->delete();
+    break;
 
     //tạo 1 file CustomerController (index,add,edit)
     // tạo url trỏ đến các hàm trong CustomerController làm y như product

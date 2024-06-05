@@ -15,7 +15,20 @@ class Product {
     }
     public function addProduct($name,$price) { //3 tham số truyền vào // tham số truyền dựa trên số lượng trường trên database
         $sql = "INSERT INTO $this->table VALUE (NULL,'$name','$price')";
-//        echo $sql;die;
+        return $this->db->getData($sql,false);
+    }
+    // hiển thị sản phẩm theo id lên trước khi sửa
+    public function getProductById($id) {
+        $sql = "SELECT * FROM $this->table WHERE id = $id";
+        return $this->db->getData($sql,false);
+    }
+    // cập nhập sản phản
+    public function updateProduct($id,$name,$price) {
+        $sql = "UPDATE $this->table SET name = '$name',price = '$price' WHERE id = '$id'";
+        return $this->db->getData($sql,false);
+    }
+    public function deleteProduct($id) {
+        $sql = "DELETE FROM $this->table WHERE id = '$id'";
         return $this->db->getData($sql,false);
     }
 }
